@@ -1,11 +1,13 @@
-package com.viewflipper_viewpager_fragment;
+package com.viewflipper_viewpager_fragment.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.viewflipper_viewpager_fragment.fragment.NewOrderFragment;
+import com.viewflipper_viewpager_fragment.fragment.PickUpFragment;
 
 public class ViewPager2Adapter extends FragmentStateAdapter {
     public ViewPager2Adapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {

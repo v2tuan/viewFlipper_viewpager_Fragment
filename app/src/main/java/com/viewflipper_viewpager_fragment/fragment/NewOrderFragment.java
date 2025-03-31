@@ -1,4 +1,4 @@
-package com.viewflipper_viewpager_fragment;
+package com.viewflipper_viewpager_fragment.fragment;
 
 import android.os.Bundle;
 
@@ -8,12 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.viewflipper_viewpager_fragment.databinding.FragmentNewOrderBinding;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link PickUpFragment#newInstance} factory method to
+ * Use the {@link NewOrderFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PickUpFragment extends Fragment {
+public class NewOrderFragment extends Fragment {
+    FragmentNewOrderBinding binding;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +27,7 @@ public class PickUpFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public PickUpFragment() {
+    public NewOrderFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +37,11 @@ public class PickUpFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PickUpFragment.
+     * @return A new instance of fragment NewOrderFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PickUpFragment newInstance(String param1, String param2) {
-        PickUpFragment fragment = new PickUpFragment();
+    public static NewOrderFragment newInstance(String param1, String param2) {
+        NewOrderFragment fragment = new NewOrderFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +62,7 @@ public class PickUpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pick_up, container, false);
+        binding = FragmentNewOrderBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 }

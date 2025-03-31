@@ -5,7 +5,7 @@
         <item name="android:windowSplashScreenBackground">@color/black</item>
 
         <!-- Logo hoặc biểu tượng hiển thị trong Splash Screen -->
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/nike</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
 
         <!-- Hiệu ứng fade khi chuyển sang màn hình chính -->
         <item name="android:windowSplashScreenAnimationDuration">500</item>
